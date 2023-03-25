@@ -2,8 +2,11 @@ extends layout.pug
 
 block content
 
-  .c-header.background-bg  
-      iframe(width='100%' height='850' src='https://www.youtube.com/embed/K8OP3JzVMOk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen)
+  
+  .container
+    .row
+      .col-md-12
+        iframe(width='100%' height='850' src='https://www.youtube.com/embed/K8OP3JzVMOk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen)
 
   .custom(style="background-image: url(images/back1.png);     background-image: url(images/back1.png);background-size: contain;background-position: center;")
     .container-md
@@ -41,9 +44,9 @@ block content
         br
         br
         br
-        button.primary-button.m-2(type='submit' onclick='window.open("coltrane.html")') Descargar logos
+        
         button.secondary-button.m-2(type='submit' onclick='window.open("coltrane.html")') Usar en figma
-
+        button.primary-button.m-2(type='submit' onclick='window.open("https://drive.google.com/drive/folders/1e4H2J9HRz_78NFBlac2joyqiJba0LDET?usp=share_link")') Descargar logos
      
         br
         br
@@ -99,8 +102,9 @@ block content
         br
         br
         .text-center 
-          button.primary-button.m-2(type='submit' onclick='window.open("coltrane.html")') Descargar logos de redes
           button.secondary-button.m-2(type='submit' onclick='window.open("coltrane.html")') Usar en figma
+          button.primary-button.m-2(type='submit' onclick='window.open("https://drive.google.com/drive/folders/1e4H2J9HRz_78NFBlac2joyqiJba0LDET?usp=share_link")') Descargar logos de redes
+          
 
         br
         br

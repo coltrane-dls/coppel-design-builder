@@ -2,9 +2,9 @@ extends layout.pug
 
 block content
 
-  .c-header.background-bg  
-      img(src='images/principal.png' alt)
-
+  .c-header-background.background-bg.b-center.hv-50(style="background-image: url('images/principal.png'); background-size: contain;background-repeat: no-repeat;")
+  
+  
   .custom(style="background-image: url(images/back1.png);     background-image: url(images/back1.png);background-size: contain;background-position: center;")
     .container-md
       br
@@ -22,26 +22,28 @@ block content
       .row
         .col-md-4.mb-4
           .c-card.item
-            .img-content.neutral-bg(style="background-image: url('images/coppel.png'); background-size: cover;background-position: center;")
-              
+            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;")
+                      img(src="images/coppel.png", alt="" style="width:100%;height:auto;" width="460" height="345" )
             .content.m-4
               h3 Coppel
               p Conoce qué es una Cuenta Individual, cómo funciona y por qué es importante.
-              a(href='#') Conocer más
+              a(href='coppel.html' ) Conocer más
         .col-md-4.mb-4
           .c-card.item
-            .img-content.neutral-bg(style="background-image: url('images/bancoppel.png'); background-size: cover;background-position: center;")
+            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;")
+                      img(src="images/bancoppel.png", alt="" style="width:100%;height:auto;" width="460" height="345")
             .content.m-4
               h3 Bancoppel
               p Conoce los documentos que necesitas para iniciar tu trámite.
-              a(href='#') Conocer más
+              a(href='bancoppel.html' ) Conocer más
         .col-md-4.mb-4 
           .c-card.item
-            .img-content.neutral-bg(style="background-image: url('images/afore.png'); background-size: cover;background-position: center;")
+            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;")
+                      img(src="images/afore.png", alt="" style="width:100%;height:auto;" width="460" height="345")
             .content.m-4
               h3 Afore Coppel
               p Mantén tu información al día para recibir tu Estado de Cuenta y hacer trámites.
-              a(href='#') Conocer más
+              a(href='afore.html' ) Conocer más
       
       br
       br
@@ -55,29 +57,31 @@ block content
           br 
           |Language System
         button.primary-button.m-3(type='submit' onclick='window.open("coltrane.html")') Conocer más
-    
       .row
         .col-md-4.mb-4
           .c-card.item
-            .img-content.neutral-bg(style="background-image: url('images/componentes.png'); background-size: cover;background-position: center;")
-              
+            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;background-color: #f4faff;overflow: hidden;")
+                      img(src="images/componentes.png", alt="" style="width:100%;height:auto;" width="460" height="345" )
             .content.m-4
               h3 Componentes
               p Creamos un sistema de diseño que nos representa, que busca un balance entre lo amigable y lo sobrio para la construcción de productos coherentes.
-            
+          
         .col-md-4.mb-4
           .c-card.item
-            .img-content.neutral-bg(style="background-image: url('images/ilustraciones.png'); background-size: cover;background-position: center;")
+            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;background-color: #f4faff;overflow: hidden;")
+                      img(src="images/ilustraciones.png", alt="" style="width:100%;height:auto;" width="460" height="345")
             .content.m-4
               h3 Ilustraciones
               p ¡Diseñamos para todos! Empatizamos con la diversidad de nuestros usuarios y creamos elementos que representen a todas las personas.
-              
+          
         .col-md-4.mb-4 
           .c-card.item
-            .img-content.neutral-bg(style="background-image: url('images/iconos.png'); background-size: cover;background-position: center;")
+            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;background-color: #f4faff;overflow: hidden;")
+                      img(src="images/icons_2.png", alt="" style="width:100%;height:auto;" width="460" height="345")
             .content.m-4
               h3 Iconos
               p Representamos conceptos que trasladan información útil al usuario, usados de forma clara y simplificada, que garantiza la consistencia de nuestros productos.
+      
       br
       br
       br
@@ -86,27 +90,13 @@ block content
       br
       br
       br
-    .custom.background-bg(style="min-height:75vh ;background-image: url(images/back2.png);background-size: contain;background-position: center;background-repeat: no-repeat;")
+    .custom.background-bg
       .container-md
         .row
-          .col-md-6 
-          .col-md-6.mt-5
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
+          .col-md-6.p-5
+            img.w-100(src="images/man_index.png", alt="")
+          .col-md-6(style="display: flex;justify-content: center;align-items: flex-start;flex-direction: column;")
             .display Customer Experience
             p El manual de voz y tono fue creado para mantenerse de forma orgánica, incluyente y accesible, cónoce todo lo que encontramos en nuestra investigación con nuestros clientes.
-            button.primary-button.m-3(type='submit' onclick='window.open("coltrane.html")') Conocer más
+            button.primary-button.m-3(type='submit' onclick='window.open("https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio")') Conocer más
     
