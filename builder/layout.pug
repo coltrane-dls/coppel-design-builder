@@ -4,13 +4,28 @@ html(lang="en")
     block head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
     link(rel="stylesheet", href="coltrane.min.css")
     link(rel="stylesheet", href="main.css")
     link(rel="stylesheet", href="bootstrap-grid.css")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+
+
+    meta(property='og:title' content='Design @ Coppel (Coppel-Design.com)')
+    meta(property='og:type' content='website')
+    meta(property='og:url' content=' https://coppel-design.com/')
+    meta(property='og:image' content='./images/principal.png')
+    meta(property='og:description' content='El sitio donde podrás encontrar toda la información sobre los estandares de diseño en Coppel')
+    meta(property='og:site_name' content='Design @ Coppel')
+
+
+
+
+
     title Coppel Design 
   body.background-bg
-    nav.c-navbar.fixed
+    nav.c-navbar.fixed.animate__fadeInDown.animate__animated
             .brand
                 h4 Coppel Design
             ul.menu
@@ -45,7 +60,9 @@ html(lang="en")
                 li
                     a(href='recursos.html') Recursos
                 li
-                    a(href='https://sites.google.com/bancoppel.com/m-com-organico' target="blank") Customer Experience
+                    a(href='tipografia.html') Tipografias
+                li
+                    a(href='https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio' target="blank") Customer Experience
     block content
   footer.c-footer.white-bg#footer-site
     .text-center.pb-4
@@ -86,3 +103,13 @@ html(lang="en")
       a.simple(href="#") Aviso de privacidad
       br
       | Copyright© 2023 Coppel - Todos los derechos reservados.
+    //  Google tag (gtag.js) 
+    script(async src='https://www.googletagmanager.com/gtag/js?id=G-S060M0NFTJ')
+    script.
+      
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-S060M0NFTJ');
+  
