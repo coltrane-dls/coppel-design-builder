@@ -1,0 +1,79 @@
+
+extends layout.pug
+
+block content
+
+  .primary-bg.pt-4.pb-4
+      .container-md.p-4
+        .row.justify-content-center 
+          .col-lg-4.p-4 
+            .c-card.m-4(style="padding:0px")
+              .background-bg.p-4.text-center
+                img(src="images/r-icons.png", alt="" style="width:100%")
+              .content.p-4
+                h3.mt-0 Coltrane.spots
+                .text-center
+                  .d-flex
+                    button.primary-button.responsive.btn_fix_custom(type='submit' title="internal_components" onclick='window.open(\'https://www.figma.com/file/Rr7P76yXGDyXXccdsoJPGc/Coltrane.spots?type=design&node-id=81%3A69&t=B8SloJl91TuJmjwj-1\')') Figma
+ 
+                  //- div.m-3
+                  //- //- a(href="https://www.figma.com/file/CasS1XCuZcMpog5c6yv3oF/Coltrane.Icons?type=design&node-id=10-2&t=lApokjbg1vaI82w1-0" target="blank" title="external_components") Equipos externo
+          .col-lg-1 
+          .col-lg-5.pt-3.white.align-self-center
+            
+            h1 Dale un toque de color a tus proyectos con “Spots”
+            h2 Conoce una alternativa a nuestra galería de iconos
+            
+  .custom.white-bg.p-4(style="min-height:80vh;").d-flex.justify-content-center.flex-column
+    .container-md
+      .row.justify-content-center 
+
+        .col-md-5.d-flex.justify-content-center.flex-column.mb-4.align-self-center
+          img(src="images/spot_core.png", alt="" style="width:100%")
+           
+        
+        .col-md-5.d-flex.justify-content-center.flex-column.p-4.align-self-center
+          h1.mb-0 ¿Qué son y para qué sirven?
+          p Los Spots son la representación gráfica simple y literal de una ilustración.
+            br
+            br
+            | Son una alternativa a los iconos, úsalos cuando necesites dar énfasis a información, páginas y productos.
+
+        
+
+  .custom.white-bg.p-4(style="min-height:80vh;").d-flex.justify-content-center.flex-column.background-bg 
+    .container-md.p-4
+      .row.justify-content-center 
+        .col-md-8.text-center.p-4
+          h1.m-0.p-0 Obtén las librerías de Figma
+          p.m-0.p-0 Carga las librerías a tus flujo de trabajo y diseña de forma más efectiva con la colección de componentes agnósticos Coltrane, disponible en Figma. 
+
+      br
+      br
+      br
+      .row.justify-content-center
+        
+        .col-md-4.d-flex.justify-content-center.flex-column 
+          .c-card(style="padding:0px") 
+              .text-center(style="background:#1b1a16;")
+                img(src="images/figma_set.png", alt="" style="width:79%")
+              .content.p-4
+                h3.m-0 Equipos internos
+                p Para diseñadores que pertenecen a células internas de diseño y producto de Grupo Coppel.
+                button.primary-button.m-0.responsive(type='submit' title="internal_components" onclick='window.open(\'https://www.figma.com/file/Rr7P76yXGDyXXccdsoJPGc/Coltrane.spots?type=design&node-id=81%3A69&t=B8SloJl91TuJmjwj-1\')' style="min-width:auto;") Obtén la librería
+        .col-md-4.d-flex.justify-content-center.flex-column 
+            .c-card(style="padding:0px") 
+                .background-bg.text-center
+                  img(src="images/drive_set.png", alt="" style="width:79%")
+                .content.p-4
+                  h3.m-0 Drive
+                  p Para equipos de trabajo ajenos que diseñan productos digitales para Coppel.
+                  br
+                  button.primary-button.m-0.responsive(type='submit' title="external_components" onclick='window.open(\'https://drive.google.com/drive/folders/17IHNorTCqpJ5-x2I4-Y8rCyo1dX6t8__\')' style="min-width:auto;") Obtén la librería
+      
+      br
+      br
+      br  
+
+
+        

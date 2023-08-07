@@ -27,29 +27,31 @@ html(lang="en")
   body.background-bg
     nav.c-navbar.fixed.animate__fadeInDown.animate__animated
             .brand
-                h4 Coppel Design
+                  h4 
+                    a(href="index.html")   Coppel Design
             ul.menu
                 li
                     a(href='index.html') Inicio
+                li
+                    a(href='tipografia.html') Tipografías
                     
-                //- li
-                //-     a(href='https://sites.google.com/coppel.com/developers?pli=1&authuser=1' target="blank") Developers Coppel
                 li
                         .tooltip
-                            a(href="coppel.html")  Brand
+                            a(href="coppel.html")  Branding
                             .tooltip-container.box-shadow
                                 .tooltip-content
                                     a.simple(href="coppel.html") Coppel 
                                     br
-                                    a.simple(href="bancoppel.html") Bancoppel
+                                    a.simple(href="bancoppel.html") BanCoppel
                                     br
-                                    a.simple(href="afore.html") Afore
-                            
+                                    a.simple(href="afore.html") Afore         
                 li
                     .tooltip
-                            a(href="coltrane.html")  Coltrane
+                            a(href="coltrane.html")  Coltrane DLS 
                             .tooltip-container.box-shadow
                                 .tooltip-content
+                                    div.bold Sistema de diseño Coltrane
+                                    br
                                     a.simple.mb-1(href="https://coltrane.design" target="blank") Coltrane.css
                                     br
                                     a.simple.mb-1(href="https://www.figma.com/files/1047193570379035198/project/63206897" target="blank") Coltrane.Illustrations
@@ -57,12 +59,17 @@ html(lang="en")
                                     a.simple.mb-1(href="https://www.figma.com/files/1047193570379035198/project/76072020" target="blank") Coltrane.Components
                                     br
                                     a.simple.mb-1(href="https://www.figma.com/files/1047193570379035198/project/76072020" target="blank") Coltrane.icons
+              
+
                 li
-                    a(href='recursos.html') Recursos
+                    a(href='https://sites.google.com/coppel.com/copiadecontentopsguauxc/inicio' target="blank") Contenido
                 li
-                    a(href='tipografia.html') Tipografias
-                li
-                    a(href='https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio' target="blank") Customer Experience
+                    a(href='https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio' target="blank") Customer UX
+                li · 
+                li.success
+                  a.success(href='recursos.html') Recursos
+                //- li
+                //-     a(href='https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio' target="blank") Customer Experience
     block content
   footer.c-footer.white-bg#footer-site
     .text-center.pb-4
@@ -89,6 +96,9 @@ html(lang="en")
               a.simple(href="https://coltrane.design/")  Coltrane.CSS
             li 
               a.simple(href="https://www.figma.com/files/1047193570379035198/project/63206897")  Coltrane.Ilustraciones
+            li 
+              a.simple(href='https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio' target="blank") Customer Experience
+
         .col-lg-1
         .col-lg-2
           h4 Contáctanos
@@ -104,12 +114,14 @@ html(lang="en")
       br
       | Copyright© 2023 Coppel - Todos los derechos reservados.
     //  Google tag (gtag.js) 
+    //  Google tag (gtag.js) 
     script(async src='https://www.googletagmanager.com/gtag/js?id=G-S060M0NFTJ')
     script.
       
       window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
       
-        gtag('config', 'G-S060M0NFTJ');
+            gtag('config', 'G-S060M0NFTJ');
+  
   

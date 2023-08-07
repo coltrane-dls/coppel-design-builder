@@ -2,8 +2,6 @@ extends layout.pug
 
 block content
 
-  .c-header.background-bg  
-      img(src='images/recursos.png' alt)
 
   .custom(style="background-image: url(images/back1.png);     background-image: url(images/back1.png);background-size: contain;background-position: center;")
     .container-md
@@ -11,39 +9,95 @@ block content
         
         .col-md-12
           .display.mb-5.mt-5
+          //- --------------------------------------------
+          .c-card.item.horizontal.mb-3
+            .img-content
+              img(src='images/r-fonts.png' alt)
+            .content.m-3
+              h3 Tipografías
+              p Utiliza las tipografías oficiales de Grupo Coppel en los diseños de tus productos digitales.
+            div.text-center.p-4(style="margin-left:auto;")
+              button.primary-button.m-3(type='submit' onclick='window.location.replace("./tipografia.html")') Conocer más
+              div 
+                  a.p-3(href="https://drive.google.com/drive/folders/1u6tp1SE32P_83rjS_aIE7ict33-lAJiT") Drive
+          
+          //- --------------------------------------------
+          .c-card.item.horizontal.mb-3
+            .img-content
+              img(src='images/componentes_.png' alt)
+            .content.m-3
+              h3 Componentes
+              p Consulta la anatomía de los componentes utilizados en Coltrane de Grupo Coppel.
+            div.text-center.p-4(style="margin-left:auto;") 
+              button.primary-button.m-3(type='submit' onclick='window.location.replace("./componentes.html")') Conocer más
+              div 
+                  a.p-3(href="https://www.figma.com/files/1047193570379035198/project/89126378/%F0%9F%93%A6-Components?fuid=1133412856505869872") Figma
+                  | · 
+                  a.p-3(href="https://www.figma.com/file/uagdKEpiDDYTd8pODWQ9rR/Components?type=design&t=lApokjbg1vaI82w1-1") Externos
+                
+                  
+          //- --------------------------------------------
           .c-card.item.horizontal.mb-3
             .img-content
               img(src='images/r-icons.png' alt)
             .content.m-3
-              h4 Iconos
-              p En armonía con el sistema de espaciado de 8 puntos que utiliza el DLS.
-            button.primary-button.m-5 Ver en figma
+              h3 Spots
+              p Conoce una alternativa a nuestra galería de iconos.
+            div.text-center.p-4(style="margin-left:auto;") 
+              button.primary-button.m-3(type='submit' onclick='window.location.replace("./spots.html")') Conocer más
+              div 
+                  a.p-3(href="https://www.figma.com/file/Rr7P76yXGDyXXccdsoJPGc/Coltrane.spots?type=design&node-id=81%3A69&t=B8SloJl91TuJmjwj-1") Figma
+                  | · 
+                  a.p-3(href="https://drive.google.com/drive/folders/17IHNorTCqpJ5-x2I4-Y8rCyo1dX6t8__") Drive
+                
+                  
+
+          
+          
+          //- --------------------------------------------
+          .c-card.item.horizontal.mb-3
+            .img-content
+              img(src='images/icon_set.png' alt)
+            .content.m-3
+              h3 Iconos
+              p Descubre todos los  iconos que tenemos disponibles para ti y tu creatividad.
+            div.text-center.p-4(style="margin-left:auto;") 
+              button.primary-button.m-3(type='submit' onclick='window.location.replace("./icons.html")') Conocer más
+              div 
+                a.p-3(href="https://www.figma.com/files/1047193570379035198/project/89126398/%F0%9F%98%80-Icons?fuid=1133412856505869872") Figma
+                | · 
+                a.p-3(href="https://drive.google.com/drive/folders/1kndUz30tN--Rtod-7roxbHnrYBe0XNuz") Drive
+          //- --------------------------------------------
+          .c-card.item.horizontal.mb-3
+            .img-content
+              img(src='images/man_.png' alt)
+            .content.m-3
+              h3 Ilustraciones
+              p Encuentra esa ilustración que representa el concepto que estás buscando.
+            div.text-center.p-4(style="margin-left:auto;") 
+              button.primary-button.m-3(type='submit' onclick='window.location.replace("./illustrations.html")') Conocer más
+              div 
+                a.p-3(href="https://www.figma.com/files/1047193570379035198/project/89126417/%F0%9F%8F%80-Illustrations?fuid=1133412856505869872") Figma
+                | · 
+                a.p-3(href="https://drive.google.com/drive/folders/1tpJdC471FvzXgS82iXQd2AnO6qF8wrkR") Drive    
+          //- --------------------------------------------     
           .c-card.item.horizontal.mb-3
             .img-content
               img(src='images/r-logos.png' alt)
             .content.m-3
-              h4 Logotipos
-              p En armonía con el sistema de espaciado de 8 puntos que utiliza el DLS.
-            button.primary-button.m-5 Descargar
+              h3 Logotipos
+              p Consulta los logotipos en nuestro sistema. 
+            .p-4(style="margin-left:auto;")
+              button.primary-button.m-3(type='submit' onclick='window.open("https://drive.google.com/drive/folders/1Vt3ZJU61CaEGJjTb14idBWPwDWzgIRag")') Ir al drive
+          
+          //- --------------------------------------------
           .c-card.item.horizontal.mb-3
             .img-content
-              img(src='images/r-fonts.png' alt)
+              img(src='images/gsite.png' alt)
             .content.m-3
-              h4 Tipografías
-              p En armonía con el sistema de espaciado de 8 puntos que utiliza el DLS.
-            button.primary-button.m-5 Descargar
-          .c-card.item.horizontal.mb-3
-            .img-content
-              img(src='images/r-fonts.png' alt)
-            .content.m-3
-              h4 Template de presentación
-              p En armonía con el sistema de espaciado de 8 puntos que utiliza el DLS.
-            button.primary-button.m-5 Descargar
-          .c-card.item.horizontal.mb-3
-            .img-content
-              img(src='images/r-workshop.png' alt)
-            .content.m-3
-              h4 Template de workshop
-              p En armonía con el sistema de espaciado de 8 puntos que utiliza el DLS.
-            button.primary-button.m-5 Descargar
+              h4 Template de google sites
+              p Aquí encontrarás un sitio basado en Google sites con todas las propiedades coltrane. 
+            div.text-center.p-4(style="margin-left:auto;")
+              button.primary-button.m-3(type='submit' onclick='window.location.replace("https://sites.google.com/u/0/new/?authuser=0&tgif=d&ftv=1")') Ir a Sites
+          //- --------------------------------------------
           

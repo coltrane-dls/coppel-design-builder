@@ -1,15 +1,23 @@
 body{
     margin: 0px;
     padding: 0px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .c-card{
     box-shadow: 0 6px 24px rgb(25 75 123 / 15%);
 }
 
+.brand a{
+    color:var(--black) !important;
+}
+.brand a:hover{
+    text-decoration: none;
+}
 
 a{
     letter-spacing: .9px;
+   
 }
 
 a.simple{
@@ -75,4 +83,22 @@ h1,h2{
     .c-header-background{
         height: 23vh;
       }
+  }
+
+
+
+
+  /*================================== Customs */
+
+  .c-card.item.horizontal .img-content{
+    width: 30%;
+    max-width: 200px;
+  }
+
+  .display{
+    font-weight: inherit !important;
+  }
+
+  .btn_fix_custom{
+    min-width: auto !important;
   }
