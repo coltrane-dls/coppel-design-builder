@@ -3,18 +3,20 @@ extends layout.pug
 block content
 
 
+
   section.primary-bg.p-4
     .container-md.p-4
       .row.d-flex.items-center.justify-center
         .col-md-1
-        .col-md-5.animate__fadeIn.animate__animated.p-4
-          img(src="images/index_head.png", alt="" width="100%")
-        .col-md-1
-        .col-md-4.white.p-4.align-self-center
+        .col-md-4.animate__fadeIn.animate__animated.p-4.white
           .display ¡Hagamos experiencias extraordinarias juntos!
           p En este sitio encontrarás las herramientas necesarias para construir, integrar o iterar productos digitales y físicos de grupo Coppel. 
           button.primary-button.m-3.primary(type='submit' onclick='window.location.replace("./recursos.html")' style="background:white;color:#006FB9;") Ver todos los recursos
-    
+          
+        .col-md-1
+        .col-md-4.white.p-4.align-self-center
+          img(src="images/index_head.png", alt="" width="100%")
+        
   
   .custom(style="background-image: url(images/back1.png);background-image: url(images/back1.png);background-size: contain;background-position: center;")
     .container-md

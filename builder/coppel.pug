@@ -3,11 +3,19 @@ extends layout.pug
 block content
 
   
-  .container
-    .row
-      .col-md-12
-        iframe(width='100%' height='850' src='https://www.youtube.com/embed/K8OP3JzVMOk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen)
-  .custom(style="background-image: url(images/back1.png);     background-image: url(images/back1.png);background-size: contain;background-position: center;")
+    section.background_set.p-4
+      .container-md.p-4
+        .row.d-flex.items-center.justify-center
+          .col-md-1
+          .col-md-4.p-4.align-self-center
+            .display Coppel 
+            p En este sitio encontrarás las herramientas necesarias para construir, integrar o iterar productos digitales y físicos de grupo Coppel. 
+            button.primary-button.m-3.primary(type='submit' onclick='window.location.replace("./recursos.html")' ) Ver todos los recursos
+      
+          .col-md-1
+          .col-md-5.animate__fadeIn.animate__animated.p-4
+            img(src="images/init.png", alt="" width="100%")
+    .custom(style="background-image: url(images/back1.png);     background-image: url(images/back1.png);background-size: contain;background-position: center;")
     .container-md
       br
       br
