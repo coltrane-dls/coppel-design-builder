@@ -106,3 +106,22 @@ h1,h2{
   .background_set{
     background-color: var(--background-soft);
   }
+
+
+  /* ====================================== Custom head */
+
+  .c-navbar .secondary-button, .c-navbar .primary-button{
+    padding: 8px 18px;
+    border:0 solid !important;
+    margin:0px !important;
+    min-width: fit-content;
+  }
+
+  .c-navbar,.c-navbar .menu{
+    align-items: center;
+  }
+
+  .c-navbar .menu li{
+    padding-left: 4px;
+    padding-right: 4px;
+  }

@@ -1,0 +1,142 @@
+extends layout.pug
+
+block content
+
+  .primary-bg.pt-4.pb-4
+      .container-md.p-4
+        .row.justify-content-center 
+          .col-lg-5.p-4 
+            .c-card.m-4(style="padding:0px")
+              .p-1.text-center(style="background-color:#333337")
+                img(src="images/desvar.png", alt="" style="width:100%")
+              .content.p-4
+                h3.mt-0 Variables de diseño
+                p Este documento contiene variables de colores como primarios de interacción, textos, backgrounds, borders. Ademas de tamaños tipografías, curvatura de bordes y sombras de profundidad. 
+          
+                .text-center
+                  
+                  a(href="#install")
+                   button.primary-button.responsive.btn_fix_custom(type='submit' title="internal_components" ) Descargar para mi proyecto
+            
+          .col-lg-1 
+          .col-lg-5.pt-3.white.align-self-center
+            
+            h1 Variables de diseño
+              .small También conocido como "tokens de diseño"
+   
+            h2 Estas son una única fuente de verdad para nombrar y almacenar decisiones de diseño para experiencias de productos Coppel.
+            
+
+            
+  .custom.white-bg.p-4(style="min-height:80vh;").d-flex.justify-content-center.flex-column
+    .container-md
+      .row.justify-content-center 
+
+        
+           
+        
+        .col-md-5.d-flex.justify-content-center.flex-column.p-4.align-self-center
+          h1.mb-0 ¿Qué son y para qué sirven?
+          p Las variables de diseño son combinaciones de nombre y valor que representan decisiones de diseño 
+            strong pequeñas y reutilizables. 
+            | Una variable puede ser un color, un estilo de fuente, una unidad de espacio en blanco o profundidad, diseñada para una necesidad específica.
+        .col-md-5.d-flex.justify-content-center.flex-column.mb-4.align-self-center
+          img(src="images/token.png", alt="" style="width:100%")
+        
+
+  #install.custom.white-bg.p-4(style="min-height:80vh;").d-flex.justify-content-center.flex-column.background-bg 
+    .container-md.p-4
+      .row.justify-content-center 
+        .col-md-8.text-center.p-4
+          h1.m-0.p-0 Obtén los instalables de las siguientes tecnologías. 
+          p.m-0.p-0 Estos elementos pueden ser consumidos por desarrolladores y diseñadores  dentro de Grupo Coppel. 
+
+      br
+      br
+      br
+      .row.justify-content-center
+        
+        .col-md-4.d-flex.justify-content-center.flex-column 
+          .c-card(style="padding:0px") 
+              .background-bg.text-center.p-4
+                .pt-4.pb-4
+                  img(src="images/c-figma.png", alt="" style="    height: 40px;")
+              .content.p-4
+                h3.m-0 Figma
+                p Puedes acceder a las variantes de diseño directamente desde Ios recursos de Figma
+                br
+                small.small Si necesitas accesos contácta a 
+                  a(href="mailto:violeta.rodriguez@coppel.com") este mail.
+                br
+                br
+                
+                button.primary-button.m-0.responsive(type='submit' title="internal_components" onclick='window.open(\'https://www.figma.com/file/6dZzKTwlZO5sIfy37ObgrT/Coltrane.components-v4.0?type=design&node-id=700-15192&mode=design&t=fOZwn2cKaoZRiGSv-0\')' style="min-width:auto;") Ir al documento
+        .col-md-4.d-flex.justify-content-center.flex-column 
+          .c-card(style="padding:0px") 
+              .background-bg.text-center.p-4
+                .pt-4.pb-4
+                  img(src="images/c-css.png", alt="" style="    height: 50px;")
+              .content.p-4
+                h3.m-0 CSS 
+                p Puedes acceder a las variantes de diseño directamente descargando este zip
+                
+                br
+                small.small Si necesitas accesos contácta a 
+                  a(href="mailto:jesus.barajas@coppel.com") este mail.
+                br
+                br
+
+                button.primary-button.m-0.responsive(type='submit' title="external_components" onclick='window.open(\'https://coltrane.design/\')' style="min-width:auto;") Ir a la descarga
+
+      
+        
+      .row.justify-content-center.mt-4         
+        .col-md-3.d-flex.justify-content-center.flex-column 
+          .c-card(style="padding:0px") 
+              .background-bg.text-center.p-4
+                .pt-4.pb-4
+                  img(src="images/c-android.png", alt="" style="    height: 60px;")
+              .content.p-4
+                h3.m-0 Android
+                p Puedes acceder a las variantes de diseño directamente descargando este zip
+                br
+                small.small Si necesitas accesos contácta a 
+                  a(href="mailto:francisco.rodriguez@coppel.com") este mail.
+                br
+                br
+                button.primary-button.m-0.responsive(type='submit' title="external_components" onclick='window.open(\'https://dev.azure.com/IscoRodriguez/Coltrane-Android/_git/Coltrane-Android?version=GBDevelop\')' style="min-width:auto;") Ir al repositorio
+        .col-md-3.d-flex.justify-content-center.flex-column 
+          .c-card(style="padding:0px") 
+              .background-bg.text-center.p-4
+                .pt-4.pb-4
+                  img(src="images/c-ios.png", alt="" style="    height: 50px;")
+              .content.p-4
+                h3.m-0 iOS
+                p Puedes acceder a las variantes de diseño directamente descargando este zip
+                br
+                small.small Si necesitas accesos contácta a 
+                  a(href="mailto:raul.gonzalezg@coppel.com") este mail.
+                br
+                br
+                button.primary-button.m-0.responsive(type='submit' title="external_components" onclick='window.open(\'https://drive.google.com/drive/folders/1R5sJBSqfwTV0vQ6sqw-2U127AhK-pFUw\')' style="min-width:auto;") Ir a la descarga
+        
+        .col-md-3.d-flex.justify-content-center.flex-column 
+          .c-card(style="padding:0px") 
+              .background-bg.text-center.p-4
+                .pt-4.pb-4
+                  img(src="images/c-windows.png", alt="" style="    height: 50px;")
+              .content.p-4
+                h3.m-0 Windows
+                p Puedes acceder a las variantes de diseño directamente descargando este zip
+                br
+                small.small Si necesitas accesos contácta a 
+                  span 
+                    a(href="mailto:cesar.gurrion@coppel.com") este mail.
+                br
+                br
+                button.primary-button.m-0.responsive(type='submit' title="external_components" onclick='window.open(\'https://drive.google.com/drive/folders/1w6aNWGF8L71lQ5MbWUZcZMd6dTjbJTqF?usp=drive_link\')' style="min-width:auto;") Ir a la descarga
+              
+      br
+      br
+      br  
+

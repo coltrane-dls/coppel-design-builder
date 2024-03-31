@@ -31,13 +31,13 @@ html(lang="en")
                     a(href="index.html")   Coppel Design
             ul.menu
                 li
-                    a(href='index.html') Inicio
+                    button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("index.html")' ) Inicio
                 li
-                    a(href='tipografia.html') Tipografías
+                    button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("tipografia.html")' ) Tipografías
                     
                 li
                         .tooltip
-                            a(href="coppel.html")  Branding
+                            button.secondary-button.m-3.primary(href="coppel.html")  Branding
                             .tooltip-container.box-shadow
                                 .tooltip-content
                                     a.simple(href="coppel.html") Coppel 
@@ -45,29 +45,21 @@ html(lang="en")
                                     a.simple(href="bancoppel.html") BanCoppel
                                     br
                                     a.simple(href="afore.html") Afore         
+                
                 li
-                    .tooltip
-                            a(href="coltrane.html")  Coltrane DLS 
-                            .tooltip-container.box-shadow
-                                .tooltip-content
-                                    div.bold Sistema de diseño Coltrane
-                                    br
-                                    a.simple.mb-1(href="https://coltrane.design" target="blank") Coltrane.css
-                                    br
-                                    a.simple.mb-1(href="https://www.figma.com/files/1047193570379035198/project/63206897" target="blank") Coltrane.Illustrations
-                                    br
-                                    a.simple.mb-1(href="https://www.figma.com/files/1047193570379035198/project/76072020" target="blank") Coltrane.Components
-                                    br
-                                    a.simple.mb-1(href="https://www.figma.com/files/1047193570379035198/project/76072020" target="blank") Coltrane.icons
+                  button.secondary-button.m-3.primary(type='submit' onclick='window.open("https://sites.google.com/coppel.com/coltrane-education/inicio")' ) Tutoriales
+                
+                li
+                  button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("https://sites.google.com/coppel.com/coltranecontent/inicio")' ) Contenido
+                //- li
+                //-     a(href='https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio' target="blank") Customer UX
               
-
                 li
-                    a(href='https://sites.google.com/coppel.com/copiadecontentopsguauxc/inicio' target="blank") Contenido
+                  button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("./recursos.html")' ) Recursos
+                li ·
+                li 
                 li
-                    a(href='https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio' target="blank") Customer UX
-                li · 
-                li.success
-                  a.success(href='recursos.html') Recursos
+                  button.primary-button.m-3.primary(type='submit' onclick='window.location.replace("./recursos.html")' ) Contáctanos
                 //- li
                 //-     a(href='https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio' target="blank") Customer Experience
     block content
