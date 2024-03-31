@@ -4,27 +4,63 @@ block content
 
 
 
-  section.background-bg.p-4
+  section.primary-bg.p-4
     .container-md.p-4
       .row.d-flex.items-center.justify-center
         .col-md-1
-        .col-md-4.animate__fadeIn.animate__animated.p-4.text
-          .display ¡Hagamos experiencias extraordinarias juntos!
-          p En este sitio encontrarás las herramientas necesarias para construir, integrar o iterar productos digitales y físicos de grupo Coppel. 
-          button.primary-button.m-3.primary(type='submit' onclick='window.location.replace("./recursos.html")' ) Ver todos los recursos
-          
-        .col-md-1
-        .col-md-4.white.p-4.align-self-center
-          img(src="images/coppel-home.png", alt="" width="100%")
+        .col-md-12.animate__fadeIn.animate__animated.p-4.text
+          .white.display ¡Hagamos experiencias extraordinarias juntos!
+          h3.white En este sitio encontrarás las herramientas necesarias para 
+            u construir, integrar o iterar
+            | 
+            | productos digitales y físicos de grupo Coppel.  
+          button.secondary-button.primary.mt-0(type='submit' onclick='window.location.replace("./recursos.html")' ) Ver todos los recursos
+          br
+          br
+          br
+          br
+          br
         
   
   .custom(style="background-image: url(images/back1.png);background-image: url(images/back1.png);background-size: contain;background-position: center;")
+
+
+
+    .container-md(style=" margin-top:-100px;")
+    
+      .row
+        .col-md-4.mb-4
+          .c-card.item
+            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/devs.png');  background-repeat: no-repeat;background-size: cover;background-position: center;")
+            .content.m-4
+              small Coltrane
+              h3.mt-1 Para Developers
+              p Herramientas técnicas para implementar el diseño en desarrollo.
+              
+              .text-right.pt-3
+                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./index.html#")' ) Me interesa
+        .col-md-4.mb-4
+          .c-card.item
+            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/designers.png');   background-repeat: no-repeat;background-size: cover;background-position: center;")
+                      
+            .content.m-4
+              small Coltrane
+              h3.mt-1 Para Diseñadores
+              p Recursos y guías para interfaces atractivas y funcionales.
+              .text-right.pt-3
+                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./index.html#")' ) Me interesa
+        .col-md-4.mb-4 
+          .c-card.item
+            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;background-image: url('images/managers.png');     background-repeat: no-repeat;background-size: cover;background-position: center;")
+            .content.m-4
+              small Coltrane
+              h3.mt-1 Para Managers
+              p Estrategia, gobernanza y métricas para éxito del producto.
+              .text-right.pt-3
+                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./index.html#")' ) Me interesa
+
+
     .container-md
-      br
-      br
-      br
-      br
-      br
       br
       br
       .text-center.m-5
