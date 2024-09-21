@@ -4,17 +4,17 @@ block content
 
 
 
-  section.primary-bg.p-4
+  section.p-4(style="background:url('images/header.png'); background-size:cover;")
     .container-md.p-4
       .row.d-flex.items-center.justify-center
         .col-md-1
-        .col-md-12.animate__fadeIn.animate__animated.p-4.text
-          .white.display ¡Hagamos experiencias extraordinarias juntos!
-          h3.white En este sitio encontrarás las herramientas necesarias para 
+        .col-md-12.animate__fadeIn.animate__animated.p-4.text 
+          .display ¡Hagamos experiencias extraordinarias juntos!
+          h3 En este sitio encontrarás las herramientas necesarias para 
             u construir, integrar o iterar
             | 
             | productos digitales y físicos de grupo Coppel.  
-          button.secondary-button.primary.mt-0(type='submit' onclick='window.location.replace("./recursos.html")' ) Ver todos los recursos
+          
           br
           br
           br
@@ -29,7 +29,7 @@ block content
     .container-md(style=" margin-top:-100px;")
     
       .row
-        .col-md-4.mb-4
+        .col-md-3.mb-3
           .c-card.item
             .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/devs.png');  background-repeat: no-repeat;background-size: cover;background-position: center;")
             .content.m-4
@@ -39,7 +39,7 @@ block content
               
               .text-right.pt-3
                 button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./index.html#developers")' ) Me interesa
-        .col-md-4.mb-4
+        .col-md-3.mb-3
           .c-card.item
             .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/designers.png');   background-repeat: no-repeat;background-size: cover;background-position: center;")
                       
@@ -49,7 +49,16 @@ block content
               p Recursos y guías para interfaces atractivas y funcionales.
               .text-right.pt-3
                 button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./index.html#designers")' ) Me interesa
-        .col-md-4.mb-4 
+        .col-md-3.mb-3 
+          .c-card.item
+            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;background-image: url('images/writers.png');     background-repeat: no-repeat;background-size: cover;background-position: center;")
+            .content.m-4
+              small Coltrane
+              h3.mt-1 Para Writers
+              p Descubre cómo contribuir| al diseño a través de guías de estilo, tono y lenguaje inclusivo.
+              .text-right.pt-3
+                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./index.html#managers")' ) Me interesa
+        .col-md-3.mb-3 
           .c-card.item
             .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;background-image: url('images/managers.png');     background-repeat: no-repeat;background-size: cover;background-position: center;")
             .content.m-4
@@ -58,7 +67,6 @@ block content
               p Estrategia, gobernanza y métricas para éxito del producto.
               .text-right.pt-3
                 button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./index.html#managers")' ) Me interesa
-
       hr
       br
       hr
@@ -77,184 +85,24 @@ block content
     br
     .container-md
       .row
-        h2 📑 Para developers
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;background-color: #f4faff;overflow: hidden;")
-                      img(src="images/icons_2.png", alt="" style="width:100%;height:auto;" width="460" height="345")
-            .content.m-4
-              small Coltrane
-              h3.mt-1 CSS
-              p Herramientas técnicas para implementar el diseño en desarrollo.
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.open("https://coltrane.design")' ) Empezar a programar
+         .c-card.item.horizontal.mb-3
+            .img-content(style="width:40%; max-width:400px; background-image:url('images/r-logos.png');background-size: cover;height: 317px;background-position: top;")
               
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;background-color:#333337;overflow: hidden;")
-                      img(src="images/desvar.png", alt="" style="width:100%;height:auto;" width="460" height="345")
-            .content.m-4
-              small Coltrane
-              h3.mt-1 Variables $:~
-              p Hoja de estilos unificada para iOS, Web, Android y Windows.
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./designvar.html")' ) Ver las librerías
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/prime.png');  background-repeat: no-repeat;background-size: cover;background-position: center;")
-            .content.m-4
-              small Coltrane
-              h3.mt-1 PrimeNG
-              p Integración de PrimeNG en Coltrane para componentes UI y widgets.
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.open("https://github.com/mrtnbrjs/coltrane-prime-theme")' ) Utilizar el tema
+            .content.m-5
+              h3 Recursos
+              p Accede a una colección de herramientas que facilitan la creación de experiencias consistentes y colaborativas. Logotipos, tipografías, manuales y otros descargables que necesitas para diseñar y desarrollar.
+              button.primary-button.m-3(type='submit' onclick='window.location.replace("./recursos.html")') Ver los recursos
+         
+         
+         .c-card.item.horizontal.mb-3
+            .content.m-5
+              h3 Education
+              p Accede a una colección de herramientas que facilitan la creación de experiencias consistentes y colaborativas. Logotipos, tipográfias, manuales y otros descargables que necesitas para diseñar y desarrollar.
+              button.primary-button.m-3(type='submit' onclick='window.location.replace("./recursos.html")') Conocer más
+            .img-content(style="width:40%; max-width:400px; background-image:url('images/tutorial.png');background-size: cover;height: 317px;background-position: top;")
+            
+            
     br
     br
     
-    #designers
-    br
-    br
-    br
-    .container-md
-      .row
-        h2 📑 Para Designers
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;background-color: #f4faff;overflow: hidden;")
-                      img(src="images/componentes.png", alt="" style="width:100%;height:auto;" width="460" height="345")
-            .content.m-4
-              small Coltrane
-              h3.mt-1 Components
-              p Colección cohesiva de componentes para el sistema de diseño Coltrane.
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./componentes.html")' ) Utilizar componentes
-              
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;background-color: #f4faff;overflow: hidden;")
-                      img(src="images/icons_2.png", alt="" style="width:100%;height:auto;" width="460" height="345")
-            .content.m-4
-              small Coltrane
-              h3.mt-1 Icons
-              p Amplia selección de íconos diseñados para experiencias Coppel.
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./icons.html")' ) Utilizar iconos
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/ilustraciones.png');  background-repeat: no-repeat;background-size: cover;background-position: center;")
-            .content.m-4
-              small Coltrane
-              h3.mt-1 Illustrations
-              p Conjunto de ilustraciones diseñadas exclusivamente para Coppel.
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("./illustrations.html")' ) Utilizar ilustraciones
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/templates.png');  background-repeat: no-repeat;background-size: cover;background-position: center;")
-            .content.m-4
-              small Coltrane
-              h3.mt-1 Templates
-              p Plantillas prediseñadas y adaptables para el sistema Coltrane.
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.location.replace("https://www.figma.com/files/1047193570379035198/project/181251455/%F0%9F%96%BC%EF%B8%8F-Templates?fuid=1133412856505869872")' ) Utilizar un template
-    br
-    br
-    br
-  
-    #managers
-    br
-    br
-    br
-    .container-md
-      .row
-        h2 📑 Para Managers
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/report.png');  background-repeat: no-repeat;background-size: cover;background-position: center;")
-            
-            .content.m-4
-              small Coltrane
-              h3.mt-1 Executive Report
-              p Presentación de resultados para el primer trimestre del año 2024
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.open("https://drive.google.com/file/d/1Kv1INAX-DnWwjPlRxgJHT3n-HYjAuCBP/view?usp=drive_link")' ) Ver el reporte
-              
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/dashboard.png');  background-repeat: no-repeat;background-size: cover;background-position: center;")
-            
-            .content.m-4
-              small Coltrane
-              h3.mt-1 Dashboard
-              p Informe consiso de resultados del primer trimestre. 
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.open("https://docs.google.com/presentation/d/1TdJ8gRuABbecuO5z55vQ3YJ9AvcOtapqpdcwmadPll8/edit?usp=sharing")' ) Ver últimos resultados
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/orga.png');  background-repeat: no-repeat;background-size: cover;background-position: center;")
-            .content.m-4
-              small Coltrane
-              h3.mt-1 Organigrama
-              p Representación visual clara y estructurada de la organización en Coltrane.
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.open("https://www.figma.com/file/UTPT1RQdBVfI1nY47OWYmx/Organigrama-Q2?type=whiteboard&node-id=0%3A1&t=7Nuz3Hcqwz0HQbun-1")' ) Entender la estructura
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/backstage.png');  background-repeat: no-repeat;background-size: cover;background-position: top;")
-            .content.m-4
-              small Coltrane
-              h3.mt-1 Backstage
-              p Documento detallado sobre la construcción y funcionamiento del sistema, incluyendo procesos, unidades, artefactos y ceremonias.
-              caption
-                i Lectura de 15 minutos.
-              .text-right.pt-1
-                button.secondary-button.primary.mt-0.bt-small(type='submit' onclick='window.open("https://docs.google.com/document/d/1JGOFi4yureRBOZA3QuFl67vpMMzGfY26vz9J0DiyIRE/edit")' ) Leer el documento
-      br
-      br
-      hr
-      br
-      hr
-      br
-      hr
-      br
-    .container-md
-      br
-      br
-      .text-center.m-5
-        .display Branding 
-          br 
-          |Grupo Coppel 
     
-      .row
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;")
-                      img(src="images/coppel.png", alt="" style="width:100%;height:auto;" width="460" height="345" )
-            .content.m-4
-              h3 Coppel
-              p Conoce qué es una Cuenta Individual, cómo funciona y porqué es importante.
-              a(href='coppel.html' ) Conocer más
-        .col-md-4.mb-4
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;")
-                      img(src="images/bancoppel.png", alt="" style="width:100%;height:auto;" width="460" height="345")
-            .content.m-4
-              h3 BanCoppel
-              p Conoce los documentos que necesitas para iniciar tu trámite.
-              a(href='bancoppel.html' ) Conocer más
-        .col-md-4.mb-4 
-          .c-card.item
-            .background-bg(style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex;")
-                      img(src="images/afore.png", alt="" style="width:100%;height:auto;" width="460" height="345")
-            .content.m-4
-              h3 Afore Coppel
-              p Mantén tu información al día para recibir tu Estado de Cuenta y hacer trámites.
-              a(href='afore.html' ) Conocer más
-      
-      br
-      br
-      br
-      br
-      br
-      br
-      br

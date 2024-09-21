@@ -40,38 +40,37 @@ html(lang="en")
     nav.c-navbar.fixed.animate__fadeInDown.animate__animated
             .brand
                   h4 
-                    a(href="index.html")   Coppel Design
+                    a(href="index.html")  
+                      img(src="assets/icon.png", alt="")
+                      | Coppel Design
             ul.menu
+
                 li
                     button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("index.html")' ) Inicio
                 li
-                    button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("tipografia.html")' ) Tipografías
-                    
+                    button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("design.html")' ) Designer
                 li
-                        .tooltip
-                            button.secondary-button.m-3.primary(href="coppel.html")  Branding
-                            .tooltip-container.box-shadow
-                                .tooltip-content
-                                    a.simple(href="coppel.html") Coppel 
-                                    br
-                                    a.simple(href="bancoppel.html") BanCoppel
-                                    br
-                                    a.simple(href="afore.html") Afore         
+                    button.secondary-button.m-3.primary Devs
+                li
+                  button.secondary-button.m-3.primary(type='submit' onclick='window.open("https://sites.google.com/coppel.com/coltranecontent/inicio")' ) Contenido
                 
+                li
+                  button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("./recursos.html")' ) Recursos
+                li
+                    button.secondary-button.m-3.primary Managers
+              
                 li
                   button.secondary-button.m-3.primary(type='submit' onclick='window.open("https://sites.google.com/coppel.com/coltrane-education/inicio")' ) Tutoriales
                 
-                li
-                  button.secondary-button.m-3.primary(type='submit' onclick='window.open("https://sites.google.com/coppel.com/coltranecontent/inicio")' ) Contenido
+                
                 //- li
                 //-     a(href='https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio' target="blank") Customer UX
               
-                li
-                  button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("./recursos.html")' ) Recursos
+                
                 li ·
                 li 
                 li
-                  button.primary-button.m-3.primary(type='submit' onclick='window.open("https://forms.gle/ndeYvpVGYus8PESi6")' ) Contáctanos
+                  button.primary-button.m-3.primary(type='submit' onclick='window.open("https://forms.gle/ndeYvpVGYus8PESi6")' ) Contribuir al DLS
                 //- li
                 //-     a(href='https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio' target="blank") Customer Experience
     block content

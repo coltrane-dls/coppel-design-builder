@@ -11,10 +11,19 @@ body{
 
 .brand a{
     color:var(--black) !important;
+    display: flex;
+    align-items: center;
 }
 .brand a:hover{
     text-decoration: none;
 }
+
+.brand a img{
+  height: 27px;
+  margin-right: 8px;
+}
+
+
 
 a{
     letter-spacing: .9px;
@@ -151,3 +160,29 @@ h1,h2{
     padding-left: 4px;
     padding-right: 4px;
   }
+
+
+
+
+  /* ====================================== MINI MENU */
+
+.mini-menu{
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.mini-menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-menu > *{
+  padding-top: 8px;
+}
+
+.mini-content{
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+}
