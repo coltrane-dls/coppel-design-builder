@@ -1,0 +1,112 @@
+extends layout.pug
+
+block content
+        .container-lg.mt-5
+            .row
+            
+                .col-lg-3.col-sm-12
+                    div.custom_side
+                        include ./components/_menu.pug
+
+                       
+                        
+                .col-lg-8.col-sm-12
+                    
+                    include ./components/_intro.pug
+                    hr
+                    hr
+                    hr
+                    br
+                    .c-card.mb-4 
+                        include ./components/_tokens.pug
+
+                    .c-card.mb-4 
+                        include ./components/_tipo.pug
+
+                    br
+                    hr
+                    hr
+                    hr
+                    br
+                    
+                    .c-card.mb-4 
+                            include ./components/_install.pug
+                    
+                    .c-card
+                            
+                            h1 Componentes
+                            br
+
+                            include ./components/button.pug
+                            include ./components/alert.pug
+                            include ./components/avatar.pug
+                            include ./components/breadcrumb.pug
+                            include ./components/card.pug
+                            include ./components/collapse.pug
+                            include ./components/footer.pug
+                            include ./components/header.pug
+                            include ./components/input.pug
+                            include ./components/list.pug
+                            include ./components/modal.pug
+                            include ./components/navbar.pug
+                            include ./components/progressBar.pug
+                            include ./components/range.pug
+                            include ./components/stepper.pug
+                            include ./components/table.pug
+                            include ./components/tabs.pug
+                            include ./components/tooltip.pug
+
+
+
+
+                            br
+                            br
+                            hr
+                            hr
+                            br
+                            
+                            .types
+                                h2 🏀 Sistemas adicionales 
+                                h3#column 🧱 Columnas
+                                
+                                p
+                                | Integrado a este paquete encontraras el sistema de columnas de bootstrap sientete libre de incluirlo o quitarlo del coppelize.css según tus necesidades. Si es que decides dejarlo, puedes utilizar col-md, col-lg, container y todo el poder del grid de este framework. Para leer más sobre su uso puedes 
+                                a(href='https://getbootstrap.com/docs/4.0/layout/grid/' target='_blank') visitar su documentación
+                                br
+                                h3#utils 🎒 Utilidades
+                                
+                                p
+                                | Integrado a este paquete encontraras el sistema de utilidades y modificadores tales como p-1, m-1,
+                                a(href='https://getbootstrap.com/docs/4.0/utilities/borders/' target='_blank') visitar su documentación
+                                br
+                                br
+                                hr
+                                hr
+                                hr
+                                small
+                                br
+                                | Si tienes alguna duda o sugerencia nos puedes contactar a
+                                a(href='mailto:raul.gonzalezg@coppel.com') raul.gonzalezg@coppel.com
+                                |  para mayor support.
+                                br
+                                br
+                                | 🏀 by Coppel Design Standards - Grupo Coppel ®
+                                br
+                                br
+                                small
+                                i Esta librería antes se llamo Coppelize.css pero ahora es Coltrane.css
+
+        
+
+                    
+
+				
+    
+
+
+
+
+
+
+
+   

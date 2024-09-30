@@ -1,0 +1,63 @@
+
+  
+.types
+    h2#button 📦 Button
+
+    small Arquetipo: Botón ·  Objetivo: Interacción
+    br
+    div.mt-2.c-alert-warning
+      small ⚠️ La etiqueta #{'< button>'} como la clase .c-button funcionan para construir el botón. 
+        
+    h3#btn ⏺ Primary
+    .example.top.p-4
+      button.primary-button.m-4(type='button' name='button').
+        
+        Default Primary Button
+        
+      br
+      button.primary-button.large.m-4(type='button' name='button').
+        
+        ".large" Primary Button
+        
+      br
+      button.primary-button.m-4.responsive(type='button' name='button').
+        
+        ".responsive" - Primary Button
+
+    
+    pre.example_code.bottom.m-0: code.
+      
+        #{'<button class="primary-button m-4" type="button" name="button">'}
+        #{'Default Primary Button'}         
+        #{'</button>'}
+
+        #{'<button class="primary-button large m-4" type="button" name="button">'}
+        #{'".large" Primary Button'}
+        #{'</button>'}
+
+        #{'<button class="primary-button m-4 responsive" type="button" name="button">'}
+        #{' ".responsive" - Primary Button'}
+        #{'</button>'}
+      
+    h3#btn ⏺ Secondary
+    .example.top
+      button.secondary-button.m-4(type='button' name='button').
+        
+        Secondary Button
+        
+      button.icon-button.m-4(type='button' name='button')
+        img(src='assets/icon.svg')
+    pre.example_code.bottom.m-0: code.
+        #{'<button class="secondary-button m-4" type="button" name="button">'}
+        #{'Secondary Button'}
+        #{'</button>'}
+
+        #{'<button class="icon-button m-4" type="button" name="button"><img src="assets/icon.svg"></button>'}
+    h3#btn ⏺ Link
+    .example.top.p-4
+      a.c-link(href).
+        Link
+    pre.example_code.bottom.bottom.m-0: code.
+        #{'<a class="c-link" href="">Link</a>'}
+br
+br     

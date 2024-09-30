@@ -17,8 +17,8 @@
     <title>Coppel Design </title>
   </head>
   <body class="background-bg">
-    <div class="p-4 flex alert-container animate__fadeInUp animate__animated">
-      <div class="alert alert-warning">
+    <div class="p-4 flex alert-container animate__fadeInUp animate__animated fix_alert">
+      <div class="c-alert-warning">
         ⚠️
          <span class="p-2">Para acceder a la mayoría de los recursos, necesitas un correo de Coppel o Bancoppel.<br>Para cualquier duda <a class="warning" href="mailto:design@coppel.com">da click aquí  </a>~ (Solo mails Coppel).  </span>
       </div>
@@ -35,7 +35,7 @@
           <button class="secondary-button m-3 primary" type="submit" onclick="window.location.replace(&quot;design.html&quot;)">Designer</button>
         </li>
         <li>
-          <button class="secondary-button m-3 primary">Devs</button>
+          <button class="secondary-button m-3 primary" type="submit" onclick="window.location.replace(&quot;dev.html&quot;)">Devs</button>
         </li>
         <li>
           <button class="secondary-button m-3 primary" type="submit" onclick="window.open(&quot;https://sites.google.com/coppel.com/coltranecontent/inicio&quot;)">Contenido</button>
@@ -44,7 +44,7 @@
           <button class="secondary-button m-3 primary" type="submit" onclick="window.location.replace(&quot;./recursos.html&quot;)">Recursos</button>
         </li>
         <li>
-          <button class="secondary-button m-3 primary">Managers</button>
+          <button class="secondary-button m-3 primary" type="submit" onclick="window.location.replace(&quot;./managers.html&quot;)">Managers</button>
         </li>
         <li>
           <button class="secondary-button m-3 primary" type="submit" onclick="window.open(&quot;https://sites.google.com/coppel.com/coltrane-education/inicio&quot;)">Tutoriales</button>
@@ -57,7 +57,7 @@
       </ul>
     </nav>
     <section class="p-4" style="background:url('images/header.png'); background-size:cover;">
-      <div class="container-md p-4">
+      <div class="container-md p-4 padding-initial">
         <div class="row d-flex items-center justify-center">
           <div class="col-md-1"></div>
           <div class="col-md-12 animate__fadeIn animate__animated p-4 text"> 
@@ -71,7 +71,7 @@
       </div>
     </section>
     <div class="custom" style="background-image: url(images/back1.png);background-image: url(images/back1.png);background-size: contain;background-position: center;">
-      <div class="container-md" style=" margin-top:-100px;">
+      <div class="container-md padding-initial" style=" margin-top:-100px;">
         <div class="row">
           <div class="col-md-3 mb-3">
             <div class="c-card item">
@@ -80,7 +80,7 @@
                 <h3 class="mt-1">Para Developers</h3>
                 <p>Herramientas técnicas para implementar el diseño en desarrollo.</p>
                 <div class="text-right pt-3">
-                  <button class="secondary-button primary mt-0 bt-small" type="submit" onclick="window.location.replace(&quot;./index.html#developers&quot;)">Me interesa</button>
+                  <button class="secondary-button primary mt-0 bt-small" type="submit" onclick="window.location.replace(&quot;./dev.html&quot;)">Me interesa</button>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@
                 <h3 class="mt-1">Para Diseñadores</h3>
                 <p>Recursos y guías para interfaces atractivas y funcionales.</p>
                 <div class="text-right pt-3">
-                  <button class="secondary-button primary mt-0 bt-small" type="submit" onclick="window.location.replace(&quot;./index.html#designers&quot;)">Me interesa</button>
+                  <button class="secondary-button primary mt-0 bt-small" type="submit" onclick="window.location.replace(&quot;./design.html&quot;)">Me interesa</button>
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@
                 <h3 class="mt-1">Para Writers</h3>
                 <p>Descubre cómo contribuir| al diseño a través de guías de estilo, tono y lenguaje inclusivo.</p>
                 <div class="text-right pt-3">
-                  <button class="secondary-button primary mt-0 bt-small" type="submit" onclick="window.location.replace(&quot;./index.html#managers&quot;)">Me interesa</button>
+                  <button class="secondary-button primary mt-0 bt-small" type="submit" onclick="window.open(&quot;https://sites.google.com/coppel.com/coltranecontent/inicio&quot;)">Me interesa</button>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@
                 <h3 class="mt-1">Para Managers</h3>
                 <p>Estrategia, gobernanza y métricas para éxito del producto.</p>
                 <div class="text-right pt-3">
-                  <button class="secondary-button primary mt-0 bt-small" type="submit" onclick="window.location.replace(&quot;./index.html#managers&quot;)">Me interesa</button>
+                  <button class="secondary-button primary mt-0 bt-small" type="submit" onclick="window.location.replace(&quot;./managers.html&quot;)">Me interesa</button>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@
         <hr><br>
       </div>
       <div id="developers"></div><br><br><br>
-      <div class="container-md">
+      <div class="container-md padding-initial">
         <div class="row">
           <div class="c-card item horizontal mb-3">
             <div class="img-content" style="width:40%; max-width:400px; background-image:url('images/r-logos.png');background-size: cover;height: 317px;background-position: top;"></div>

@@ -1,0 +1,169 @@
+#inputs
+  br
+  br
+  hr
+  br
+
+
+  
+  .types
+    h2 📦 Input
+    .example.p-4
+      //  ==================================================================================== INPUTS
+      form.form-coppel(action='index.html' method='post')
+        label(for)
+          | Nombre 
+          span.small.neutral (🥑 Regular input)
+        input(type='text' name placeholder='María Gonzalez ejm.')
+        label.small(for) Un mensaje al usuario 🙃
+      br
+      hr
+      br
+      form.form-coppel(action='index.html' method='post')
+        label(for)
+          | Nombre 
+          span.small.neutral (🔥 Error input)
+        input.error-border(type='text' name placeholder='María Gonzalez ejm.')
+        label.small.error(for) Un mensaje al usuario 🙃
+      br
+      hr
+      br
+      form.form-coppel(action='index.html' method='post')
+        label(for)
+          | Nombre 
+          span.small.neutral (✅ Success input)
+        input.success-border(type='text' name placeholder='María Gonzalez ejm.')
+        label.small.success(for) Un mensaje al usuario 🙃
+      br
+      hr
+      br
+      form.form-coppel(action='index.html' method='post')
+        label.neutral(for)
+          | Nombre 
+          span.small.neutral (✅ Disabled input)
+        input(type='text' name placeholder='María Gonzalez ejm.' disabled)
+        label.small.neutral(for) Un mensaje al usuario 🙃
+      br
+      hr
+      br
+      form.form-coppel(action='index.html' method='post' disabled)
+        label(for)
+          | Nombre 
+          span.small.neutral (📦 Dropdown input)
+        .select
+          input(type='radio' name='option')
+          i.toggle.icon.icon-arrow-down
+          i.toggle.icon.icon-arrow-up
+          span.placeholder Selecciona una opción
+          label.option
+            input(type='radio' name='option')
+            span.title.animated.fadeIn Speedometer
+          label.option
+            input(type='radio' name='option')
+            span.title.animated.fadeIn Fire
+          label.option
+            input(type='radio' name='option' disabled)
+            span.title.animated.fadeIn Handbag
+          label.option
+            input(type='radio' name='option')
+            span.title.animated.fadeIn Badge
+        label.small.neutral(for) Un mensaje al usuario 🙃
+      br
+      hr
+      br
+      form.form-coppel(action='index.html' method='post' disabled)
+        label(for)
+          | Nombre 
+          span.small.neutral (📦 🔥Dropdown input DISABLED)
+        .select
+          input(type='radio' name='option' disabled)
+          //
+            <i class="toggle icon icon-arrow-down"></i>
+                                                    <i class="toggle icon icon-arrow-up"></i> 
+          span.placeholder Selecciona una opción
+          label.option
+            input(type='radio' name='option')
+            span.title.animated.fadeIn Speedometer
+          label.option
+            input(type='radio' name='option')
+            span.title.animated.fadeIn Fire
+          label.option
+            input(type='radio' name='option' disabled)
+            span.title.animated.fadeIn Handbag
+          label.option
+            input(type='radio' name='option')
+            span.title.animated.fadeIn Badge
+        label.small.neutral(for) Un mensaje al usuario 🙃
+      br
+      hr
+      br
+      form.form-coppel(action)
+        label(for)
+          | Fecha 
+          span.small.neutral (📦 🔥 Date input)
+        input(type='date' name='fecha')
+        label.small.neutral(for) Un mensaje al usuario 🙃
+      //  ==================================================================================== INPUTS
+    h3 ⏺ Tamaños de input
+    .example.p-4
+      form.form-coppel(action='index.html' method='post')
+        label(for)
+          | Nombre 
+          span.small.neutral (🥑 Small input)
+        input.c-small(type='text' name placeholder='María Gonzalez ejm.')
+        label.small(for) Un mensaje al usuario 🙃
+      br
+      br
+      form.form-coppel(action='index.html' method='post')
+        label(for)
+          | Nombre 
+          span.small.neutral (🥑 Medium /Regular input)
+        input.c-medium(type='text' name placeholder='María Gonzalez ejm.')
+        label.small(for) Un mensaje al usuario 🙃
+      br
+      br
+      form.form-coppel(action='index.html' method='post')
+        label(for)
+          | Nombre 
+          span.small.neutral (🥑 Large input)
+        input.c-large(type='text' name placeholder='María Gonzalez ejm.')
+        label.small(for) Un mensaje al usuario 🙃
+      br
+      br
+      form.form-coppel(action='index.html' method='post')
+        label(for)
+          | Nombre 
+          span.small.neutral (🥑 XLarge input)
+        input.c-xlarge(type='text' name placeholder='María Gonzalez ejm.')
+        label.small(for) Un mensaje al usuario 🙃
+
+    h3 ⏺ Uploader
+    .example.p-4
+      //  ==================================================================================== UPLOADER
+      form.form-coppel.loader(action)
+        label.file(for='avatar') Choose..
+        input#avatar(type='file' name='avatar' accept='image/png, image/jpeg')
+        input(type='text' name placeholder='File.png')
+      //  ==================================================================================== UPLOADER
+    
+
+  h2#selector 📦 Selector
+  .caption También llamado checkbox
+  br
+  .example.p-5
+    //  ==================================================================================== CHECKBOX
+    input(type='checkbox' name) 
+    label.p-2(for) Checkbox
+    //  ==================================================================================== CHECKBOX
+  h2#upload
+    | 📦 Upload
+  .example.p-5
+    //  ==================================================================================== CHECKBOX
+    .form-coppel
+      label.c-upload(for='images')
+        h3.c-upload-title Drop files here
+        | o
+
+        button.primary-button.m-3.no-click(type='submit') Subir archivo
+        input#images(type='file' accept='image/*' required)
+    //  ==================================================================================== CHECKBOX

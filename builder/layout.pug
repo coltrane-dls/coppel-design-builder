@@ -26,8 +26,8 @@ html(lang="en")
     title Coppel Design 
   body.background-bg
 
-    .p-4.flex.alert-container.animate__fadeInUp.animate__animated
-      .alert.alert-warning
+    .p-4.flex.alert-container.animate__fadeInUp.animate__animated.fix_alert
+      .c-alert-warning
         | ⚠️
         | 
         span.p-2 Para acceder a la mayoría de los recursos, necesitas un correo de Coppel o Bancoppel.
@@ -50,14 +50,14 @@ html(lang="en")
                 li
                     button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("design.html")' ) Designer
                 li
-                    button.secondary-button.m-3.primary Devs
+                    button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("dev.html")' ) Devs
                 li
                   button.secondary-button.m-3.primary(type='submit' onclick='window.open("https://sites.google.com/coppel.com/coltranecontent/inicio")' ) Contenido
                 
                 li
                   button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("./recursos.html")' ) Recursos
                 li
-                    button.secondary-button.m-3.primary Managers
+                    button.secondary-button.m-3.primary(type='submit' onclick='window.location.replace("./managers.html")' ) Managers
               
                 li
                   button.secondary-button.m-3.primary(type='submit' onclick='window.open("https://sites.google.com/coppel.com/coltrane-education/inicio")' ) Tutoriales
